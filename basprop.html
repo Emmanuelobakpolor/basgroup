@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bas Properties Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hero-bg { background-image: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); }
+        .smooth-scroll { scroll-behavior: smooth; }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body class="font-sans bg-gray-100 text-gray-800 smooth-scroll">
+    <header class="bg-gradient-to-r from-yellow-400 to-yellow-200 text-white sticky top-0 z-50 shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Bas Properties Limited</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-gray-200 transition">Home</a></li>
+                <li><a href="#services" class="hover:text-gray-200 transition">Services</a></li>
+                <li><a href="#contact" class="hover:text-gray-200 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero-bg bg-cover bg-center text-center py-20" id="home">
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Where Comfort Meets Excellence</h1>
+        <p class="text-lg text-white mb-6">Discover premium properties designed for luxury and sustainability.</p>
+        <a href="#services" class="bg-yellow-400 text-white px-6 py-3 rounded-lg hover:bg-yellow-500 transition hover-scale">Explore Properties</a>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="section bg-white p-8 rounded-lg shadow-lg mb-8" id="services">
+            <h2 class="text-3xl font-semibold text-yellow-400 mb-4">Our Services</h2>
+            <p class="text-lg">We provide luxury living and working environments, specializing in residential, commercial, and mixed-use developments with a focus on comfort, elegance, and sustainability.</p>
+        </div>
+        <div class="section bg-white p-8 rounded-lg shadow-lg" id="contact">
+            <h2 class="text-3xl font-semibold text-yellow-400 mb-4">Contact Us</h2>
+            <p class="text-lg mb-4">Email: hello@basgroup.com | Phone: +234 704 700 1556</p>
+<form action="mailto:hello@basgroup.com" method="post" enctype="text/plain" class="space-y-4">
+    <input type="text" name="Name" placeholder="Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+    <input type="email" name="Email" placeholder="Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+    <textarea name="Message" placeholder="Message" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+    <button type="submit" class="bg-yellow-400 text-white px-6 py-3 rounded-lg hover:bg-yellow-500 transition">Send Message</button>
+</form>
+        </div>
+    </div>
+    <footer class="bg-yellow-400 text-white text-center py-6">
+        <p>© 2025 Bas Properties Limited. All Rights Reserved.</p>
+        <div class="mt-2">
+            <a href="#privacy" class="hover:underline mx-2">Privacy Policy</a> |
+            <a href="#terms" class="hover:underline mx-2">Terms of Service</a>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
