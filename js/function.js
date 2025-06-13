@@ -251,31 +251,19 @@
 	$appointmentForm.validator({focus: false}).on("submit", function (event) {
 		if (!event.isDefaultPrevented()) {
 			event.preventDefault();
-			submitappointmentForm();
+			// Use emailjs to send the appointment form
+			emailjs.sendForm("service_tjlfts2", "template_4icspdu", this)
+			.then(function(response) {
+				console.log("SUCCESS!", response.status, response.text);
+				alert("Message sent successfully!");
+				appointmentformSuccess();
+			}, function(error) {
+				console.log("FAILED...", error);
+				alert("Message failed to send. Please try again.");
+				appointmentsubmitMSG(false, "Message failed to send. Please try again.");
+			});
 		}
 	});
-
-	function submitappointmentForm(){
-		/* Initiate Variables With Form Content*/
-		var name = $("#name").val();
-		var email = $("#email").val();
-		var phone = $("#phone").val();
-		var date = $("#date").val();
-		var message = $("#msg").val();
-
-		$.ajax({
-			type: "POST",
-			url: "form-appointment.php",
-			data: "name=" + name + "&email=" + email + "&phone=" + phone + "&date=" + date + "&message=" + message,
-			success : function(text){
-				if (text == "success"){
-					appointmentformSuccess();
-				} else {
-					appointmentsubmitMSG(false,text);
-				}
-			}
-		});
-	}
 
 	function appointmentformSuccess(){
 		$appointmentForm[0].reset();

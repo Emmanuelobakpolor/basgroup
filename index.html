@@ -30,6 +30,13 @@
 	<link href="css/custom.css" rel="stylesheet" media="screen">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 	<link  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+   (function(){
+      emailjs.init("AxbFu4NHKiakDRKra"); // Replace with your EmailJS public key
+   })();
+</script>
 	
 </head>
 
@@ -93,7 +100,7 @@
 						<!-- Section Title Start -->
 						<div class="section-title">
                             <h1 class="wow fadeInUp">BAS GROUP </h1>
-                            <h3 class="text-anime-style-3">Your Trusted Partner In Business Solutions.</h3>
+                            <h3 class="text-anime-style-3">Your Trusted Partner in Business Solutions.</h3>
                         </div>
 						<!-- Section Title End -->
 
@@ -898,40 +905,39 @@
                 <!-- Contact Appointment End -->
             </div>
 
-            <div class="col-lg-8 col-md-7 col-12">
-                <!-- Contact Form start -->
-                <div class="contact-form">
-                    <form id="appointmentForm" action="https://formspree.io/f/yourformid" method="POST">
-                        <input type="hidden" name="_redirect" value="https://yourwebsite.com/thank-you.html">
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-4">
-                                <input type="text" name="name" class="form-control" placeholder="Name" required>
-                            </div>
-
-                            <div class="form-group col-md-6 mb-4">
-                                <input type="email" name="email" class="form-control" placeholder="Email" required>
-                            </div>
-
-                            <div class="form-group col-md-6 mb-4">
-                                <input type="text" name="phone" class="form-control" placeholder="Your Phone" required>
-                            </div>
-
-                            <div class="form-group col-md-6 mb-4">
-                                <input type="date" name="date" class="form-control" required>
-                            </div>
-
-                            <div class="form-group col-md-12 mb-4">
-                                <textarea name="msg" class="form-control" rows="4" placeholder="Your Message" required></textarea>
-                            </div>
-
-                            <div class="col-md-12 form-group">
-                                <button type="submit" class="btn-default">Send</button>
-                            </div>
-                        </div>
-                    </form>
+           <div class="col-lg-8 col-md-7 col-12">
+    <!-- Contact Form start -->
+    <div class="contact-form">
+        <form id="appointmentForm">
+            <div class="row">
+                <div class="form-group col-md-6 mb-4">
+                    <input type="text" name="name" class="form-control" placeholder="Name" required>
                 </div>
-                <!-- Contact Form end -->
+
+                <div class="form-group col-md-6 mb-4">
+                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                </div>
+
+                <div class="form-group col-md-6 mb-4">
+                    <input type="text" name="phone" class="form-control" placeholder="Your Phone">
+                </div>
+
+                <div class="form-group col-md-6 mb-4">
+                    <input type="text" name="title" class="form-control" placeholder="Subject" required>
+                </div>
+
+                <div class="form-group col-md-12 mb-4">
+                    <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 form-group">
+                    <button type="submit" class="btn-default">Send</button>
+                </div>
             </div>
+        </form>
+    </div>
+    <!-- Contact Form end -->
+</div>
         </div>
     </div>
 </div>
@@ -1097,5 +1103,21 @@
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
 	<script src="js/theme-panel.js"></script>
+
+	<script>
+	  document.getElementById("contactForm").addEventListener("submit", function(e) {
+		e.preventDefault();
+
+		emailjs.sendForm("service_tjlfts2", "template_4icspdu", this)
+		  .then(function(response) {
+			console.log("SUCCESS!", response.status, response.text);
+			alert("Message sent successfully!");
+			document.getElementById("contactForm").reset();
+		  }, function(error) {
+			console.log("FAILED...", error);
+			alert("Message failed to send. Please try again.");
+		  });
+	  });
+	</script>
 
 </body></html>
