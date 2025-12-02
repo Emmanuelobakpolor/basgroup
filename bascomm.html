@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bas Communication Africa | Reliable Communication Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-bg { 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+        }
+        .smooth-scroll { scroll-behavior: smooth; }
+        .hover-scale { transition: all 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.05); }
+        .nav-links {
+            transition: all 0.3s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .nav-links.active {
+            max-height: 500px;
+        }
+        .service-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid #2563eb;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .comm-icon {
+            background-color: #dbeafe;
+            color: #2563eb;
+        }
+        .industry-card {
+            transition: all 0.3s ease;
+        }
+        .industry-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 smooth-scroll">
+    <header class="bg-gradient-to-r from-blue-700 to-blue-500 text-white sticky top-0 z-50 shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center justify-between w-full md:w-auto">
+                <h1 class="text-2xl font-bold">Bas Communication Africa</h1>
+                <button class="md:hidden text-white focus:outline-none" id="menu-toggle">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="hover:text-gray-200 transition font-medium">Home</a></li>
+                <li><a href="#about" class="hover:text-gray-200 transition font-medium">About</a></li>
+                <li><a href="#services" class="hover:text-gray-200 transition font-medium">Services</a></li>
+                <li><a href="#industries" class="hover:text-gray-200 transition font-medium">Industries</a></li>
+                <li><a href="#contact" class="hover:text-gray-200 transition font-medium">Contact</a></li>
+                <li><a href="#quote" class="bg-white text-blue-700 px-4 py-2 rounded hover:bg-gray-100 transition font-medium">Get Quote</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden nav-links bg-blue-500" id="mobile-menu">
+            <ul class="px-4 py-2 space-y-4">
+                <li><a href="#home" class="block hover:bg-blue-400 px-4 py-2 rounded transition">Home</a></li>
+                <li><a href="#about" class="block hover:bg-blue-400 px-4 py-2 rounded transition">About</a></li>
+                <li><a href="#services" class="block hover:bg-blue-400 px-4 py-2 rounded transition">Services</a></li>
+                <li><a href="#industries" class="block hover:bg-blue-400 px-4 py-2 rounded transition">Industries</a></li>
+                <li><a href="#contact" class="block hover:bg-blue-400 px-4 py-2 rounded transition">Contact</a></li>
+                <li><a href="#quote" class="block bg-white text-blue-700 text-center px-4 py-2 rounded hover:bg-gray-100 transition">Get Quote</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hero-bg bg-cover bg-center text-center" id="home">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Your Trusted Partner in Seamless Communication</h1>
+            <p class="text-xl text-white mb-8">Reliable, real-time communication solutions for mission-critical operations across industries.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-medium transition hover-scale shadow-lg">
+                    Our Services
+                </a>
+                <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-700 text-white px-8 py-4 rounded-lg font-medium transition hover-scale">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="about">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Bas Communication Africa</h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                We are Africa's leading provider of professional communication systems, delivering reliable solutions for businesses that depend on clear, uninterrupted communication for their operations.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-broadcast-tower text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Cutting-Edge Technology</h3>
+                <p class="text-gray-600">State-of-the-art communication equipment from world-leading manufacturers.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-headset text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">24/7 Support</h3>
+                <p class="text-gray-600">Round-the-clock technical support to keep your operations running smoothly.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-certificate text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Certified Experts</h3>
+                <p class="text-gray-600">Highly trained professionals with industry certifications and experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white" id="services">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Comprehensive communication solutions tailored to your specific operational needs.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-md service-card hover-scale">
+                <div class="w-14 h-14 comm-icon rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-walkie-talkie text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Radio Communication Systems</h3>
+                <p class="text-gray-600 mb-4">
+                    Robust two-way radio solutions for instant, reliable communication across your organization.
+                </p>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                        <span>Analog and digital systems</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                        <span>Licensed and license-free options</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                        <span>Range extenders and repeaters</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md service-card hover-scale">
+                <div class="w-14 h-14 comm-icon rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-phone-alt text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Telecom Solutions</h3>
+                <p class="text-gray-600 mb-4">
+                    Advanced telephone systems and infrastructure for seamless business communication.
+                </p>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                        <span>PBX and VoIP systems</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                        <span>Structured cabling</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                        <span>Call center solutions</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md service-card hover-scale">
+                <div class="w-14 h-14 comm-icon rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-mobile-alt text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Mobile Communication</h3>
+                <p class="text-gray-600 mb-4">
+                    Flexible mobile solutions to keep your teams connected anywhere, anytime.
+                </p>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                        <span>Rugged mobile devices</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                        <span>Vehicle-mounted systems</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                        <span>GPS integration</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-gray-50" id="industries">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Industries We Serve</h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                We provide specialized communication solutions for industries with critical communication needs.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md industry-card hover-scale text-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-shield-alt text-blue-600"></i>
+                </div>
+                <h3 class="text-lg font-bold">Security Services</h3>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md industry-card hover-scale text-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-truck text-blue-600"></i>
+                </div>
+                <h3 class="text-lg font-bold">Logistics</h3>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md industry-card hover-scale text-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-hard-hat text-blue-600"></i>
+                </div>
+                <h3 class="text-lg font-bold">Construction</h3>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md industry-card hover-scale text-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-hotel text-blue-600"></i>
+                </div>
+                <h3 class="text-lg font-bold">Hospitality</h3>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md industry-card hover-scale text-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-ambulance text-blue-600"></i>
+                </div>
+                <h3 class="text-lg font-bold">Emergency Services</h3>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md industry-card hover-scale text-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-oil-can text-blue-600"></i>
+                </div>
+                <h3 class="text-lg font-bold">Oil & Gas</h3>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md industry-card hover-scale text-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-ship text-blue-600"></i>
+                </div>
+                <h3 class="text-lg font-bold">Maritime</h3>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md industry-card hover-scale text-center">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-mountain text-blue-600"></i>
+                </div>
+                <h3 class="text-lg font-bold">Mining</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="quote">
+        <div class="bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-xl shadow-lg p-8 md:p-12 max-w-4xl mx-auto">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold mb-2">Request a Custom Quote</h2>
+                <p>Get a tailored communication solution for your business needs.</p>
+            </div>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input type="text" placeholder="Your Name" 
+                       class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300">
+                <input type="email" placeholder="Email Address" 
+                       class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300">
+                <input type="tel" placeholder="Phone Number" 
+                       class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300">
+                <select class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 text-gray-600">
+                    <option value="">Industry</option>
+                    <option value="security">Security Services</option>
+                    <option value="logistics">Logistics</option>
+                    <option value="construction">Construction</option>
+                    <option value="hospitality">Hospitality</option>
+                    <option value="emergency">Emergency Services</option>
+                    <option value="other">Other</option>
+                </select>
+                <div class="md:col-span-2">
+                    <textarea placeholder="Tell us about your communication needs" rows="4"
+                              class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"></textarea>
+                </div>
+                <button type="submit" 
+                        class="md:col-span-2 bg-white text-blue-700 hover:bg-gray-100 font-medium py-3 px-6 rounded-lg transition hover-scale shadow-md">
+                    Request Quote
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white" id="contact">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Reach out to our team for expert communication solutions.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Contact Information</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-envelope text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Email</h4>
+                            <p class="text-gray-600">hello@basgroup.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-phone-alt text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Phone</h4>
+                            <p class="text-gray-600">+234 704 700 1556</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-map-marker-alt text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Headquarters</h4>
+                            <p class="text-gray-600"> Victoria Island, Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-clock text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Business Hours</h4>
+                            <p class="text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Send Us a Message</h3>
+                <form action="mailto:hello@basgroup.com" method="post" enctype="text/plain" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input type="text" id="name" name="Name" placeholder="Your name" 
+                               class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <input type="email" id="email" name="Email" placeholder="Your email" 
+                               class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                        <input type="text" id="subject" name="Subject" placeholder="Subject" 
+                               class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" name="Message" rows="4" placeholder="Your message" 
+                                  class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" 
+                            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition hover-scale shadow-md">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Bas Communication Africa</h3>
+                    <p class="text-gray-400">
+                        Delivering reliable communication solutions across Africa for mission-critical operations.
+                    </p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#industries" class="text-gray-400 hover:text-white transition">Industries</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Radio Systems</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Telecom Solutions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Mobile Communication</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe for industry insights and updates.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" 
+                               class="flex-grow p-3 border border-gray-600 rounded-l-lg focus:outline-none bg-gray-700 text-white">
+                        <button type="submit" 
+                                class="bg-blue-600 hover:bg-blue-700 text-white px-4 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2025 Bas Communication Africa. All Rights Reserved.</p>
+                <div class="mt-2">
+                    <a href="#privacy" class="hover:underline mx-2">Privacy Policy</a> |
+                    <a href="#terms" class="hover:underline mx-2">Terms of Service</a> |
+                    <a href="#sitemap" class="hover:underline mx-2">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('#menu-toggle') && !e.target.closest('#mobile-menu')) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

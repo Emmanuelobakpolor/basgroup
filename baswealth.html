@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bas Wealth World Ltd | Financial Empowerment Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-bg { 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1556740714-5c4d5b8d8b1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+        }
+        .smooth-scroll { scroll-behavior: smooth; }
+        .hover-scale { transition: all 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.05); }
+        .nav-links {
+            transition: all 0.3s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .nav-links.active {
+            max-height: 500px;
+        }
+        .service-card {
+            transition: all 0.3s ease;
+            border-top: 4px solid #059669;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .finance-icon {
+            background-color: #d1fae5;
+            color: #059669;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 smooth-scroll">
+    <header class="bg-gradient-to-r from-green-700 to-teal-500 text-white sticky top-0 z-50 shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center justify-between w-full md:w-auto">
+                <h1 class="text-2xl font-bold">Bas Wealth World Ltd</h1>
+                <button class="md:hidden text-white focus:outline-none" id="menu-toggle">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="hover:text-gray-200 transition font-medium">Home</a></li>
+                <li><a href="#about" class="hover:text-gray-200 transition font-medium">About</a></li>
+                <li><a href="#services" class="hover:text-gray-200 transition font-medium">Services</a></li>
+                <li><a href="#testimonials" class="hover:text-gray-200 transition font-medium">Testimonials</a></li>
+                <li><a href="#contact" class="hover:text-gray-200 transition font-medium">Contact</a></li>
+                <li><a href="#consultation" class="bg-white text-green-700 px-4 py-2 rounded hover:bg-gray-100 transition font-medium">Free Consultation</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden nav-links bg-teal-500" id="mobile-menu">
+            <ul class="px-4 py-2 space-y-4">
+                <li><a href="#home" class="block hover:bg-teal-400 px-4 py-2 rounded transition">Home</a></li>
+                <li><a href="#about" class="block hover:bg-teal-400 px-4 py-2 rounded transition">About</a></li>
+                <li><a href="#services" class="block hover:bg-teal-400 px-4 py-2 rounded transition">Services</a></li>
+                <li><a href="#testimonials" class="block hover:bg-teal-400 px-4 py-2 rounded transition">Testimonials</a></li>
+                <li><a href="#contact" class="block hover:bg-teal-400 px-4 py-2 rounded transition">Contact</a></li>
+                <li><a href="#consultation" class="block bg-white text-green-700 text-center px-4 py-2 rounded hover:bg-gray-100 transition">Free Consultation</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hero-bg bg-cover bg-center text-center" id="home">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Empowering Wealth Creation</h1>
+            <p class="text-xl text-white mb-8">Strategic financial solutions for sustainable growth and prosperity.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#services" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-medium transition hover-scale shadow-lg">
+                    Our Services
+                </a>
+                <a href="#consultation" class="bg-transparent border-2 border-white hover:bg-white hover:text-green-700 text-white px-8 py-4 rounded-lg font-medium transition hover-scale">
+                    Free Consultation
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="about">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Bas Wealth World</h2>
+            <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                We are a premier financial services firm dedicated to helping individuals and businesses achieve their wealth creation goals through innovative strategies and expert guidance.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="stat-card text-white p-8 rounded-lg shadow-lg text-center hover-scale">
+                <div class="text-4xl font-bold mb-2">15+</div>
+                <div class="text-xl font-medium">Years Experience</div>
+            </div>
+            <div class="stat-card text-white p-8 rounded-lg shadow-lg text-center hover-scale">
+                <div class="text-4xl font-bold mb-2">500+</div>
+                <div class="text-xl font-medium">Satisfied Clients</div>
+            </div>
+            <div class="stat-card text-white p-8 rounded-lg shadow-lg text-center hover-scale">
+                <div class="text-4xl font-bold mb-2">$50M+</div>
+                <div class="text-xl font-medium">Assets Managed</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white" id="services">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+            <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Comprehensive financial solutions tailored to your unique needs and goals.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-lg service-card hover-scale">
+                <div class="w-14 h-14 finance-icon rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-chart-line text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Investment Management</h3>
+                <p class="text-gray-600 mb-4">
+                    Customized investment strategies designed to grow and protect your wealth.
+                </p>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                        <span>Portfolio diversification</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                        <span>Risk assessment</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                        <span>Performance monitoring</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-lg service-card hover-scale">
+                <div class="w-14 h-14 finance-icon rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-briefcase text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Business Advisory</h3>
+                <p class="text-gray-600 mb-4">
+                    Strategic guidance to help your business thrive and expand.
+                </p>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                        <span>Financial planning</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                        <span>Growth strategies</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                        <span>Operational efficiency</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-lg service-card hover-scale">
+                <div class="w-14 h-14 finance-icon rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-hand-holding-usd text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Wealth Planning</h3>
+                <p class="text-gray-600 mb-4">
+                    Holistic approach to building and preserving generational wealth.
+                </p>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                        <span>Retirement planning</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                        <span>Tax optimization</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                        <span>Estate planning</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-gray-50" id="testimonials">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Client Testimonials</h2>
+            <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Hear what our clients say about our services and impact.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <div class="text-yellow-400 mr-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic mb-6">"Bas Wealth World transformed our financial outlook. Their investment strategies helped us grow our portfolio by 35% in just two years."</p>
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                    <div>
+                        <h4 class="font-bold">James O.</h4>
+                        <p class="text-gray-500 text-sm">Entrepreneur</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <div class="text-yellow-400 mr-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic mb-6">"The business advisory services provided exceptional value. We streamlined operations and increased profitability by 22% in the first year."</p>
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                    <div>
+                        <h4 class="font-bold">Amina K.</h4>
+                        <p class="text-gray-500 text-sm">CEO, Retail Chain</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <div class="text-yellow-400 mr-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic mb-6">"Their wealth planning gave us peace of mind about our family's future. The comprehensive approach covered all aspects we hadn't even considered."</p>
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                    <div>
+                        <h4 class="font-bold">David & Sarah M.</h4>
+                        <p class="text-gray-500 text-sm">High Net Worth Individuals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="consultation">
+        <div class="bg-gradient-to-r from-green-600 to-teal-500 text-white rounded-xl shadow-lg p-8 md:p-12 max-w-4xl mx-auto">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold mb-2">Free Financial Consultation</h2>
+                <p>Let's discuss your financial goals and how we can help you achieve them.</p>
+            </div>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input type="text" placeholder="Your Name" 
+                       class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300">
+                <input type="email" placeholder="Email Address" 
+                       class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300">
+                <input type="tel" placeholder="Phone Number" 
+                       class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300">
+                <select class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300 text-gray-600">
+                    <option value="">Service of Interest</option>
+                    <option value="investment">Investment Management</option>
+                    <option value="business">Business Advisory</option>
+                    <option value="wealth">Wealth Planning</option>
+                    <option value="other">Other</option>
+                </select>
+                <div class="md:col-span-2">
+                    <textarea placeholder="Tell us about your financial goals" rows="4"
+                              class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300"></textarea>
+                </div>
+                <button type="submit" 
+                        class="md:col-span-2 bg-white text-green-700 hover:bg-gray-100 font-medium py-3 px-6 rounded-lg transition hover-scale shadow-md">
+                    Schedule Consultation
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white" id="contact">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+            <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Reach out to our team for personalized financial solutions.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Contact Information</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-envelope text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Email</h4>
+                            <p class="text-gray-600">hello@basgroup.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-phone-alt text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Phone</h4>
+                            <p class="text-gray-600">+234 704 700 1556</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-map-marker-alt text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Headquarters</h4>
+                            <p class="text-gray-600"> Victoria Island, Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-clock text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Business Hours</h4>
+                            <p class="text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Send Us a Message</h3>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input type="text" id="name" placeholder="Your name" 
+                               class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <input type="email" id="email" placeholder="Your email" 
+                               class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                        <input type="text" id="subject" placeholder="Subject" 
+                               class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" rows="4" placeholder="Your message" 
+                                  class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" 
+                            class="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition hover-scale shadow-md">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Bas Wealth World Ltd</h3>
+                    <p class="text-gray-400">
+                        Empowering financial success through innovative wealth creation solutions.
+                    </p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Investment Management</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Business Advisory</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Wealth Planning</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Financial Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe for financial insights and updates.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" 
+                               class="flex-grow p-3 border border-gray-600 rounded-l-lg focus:outline-none bg-gray-700 text-white">
+                        <button type="submit" 
+                                class="bg-green-600 hover:bg-green-700 text-white px-4 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2025 Bas Wealth World Ltd. All Rights Reserved.</p>
+                <div class="mt-2">
+                    <a href="#privacy" class="hover:underline mx-2">Privacy Policy</a> |
+                    <a href="#terms" class="hover:underline mx-2">Terms of Service</a> |
+                    <a href="#disclosures" class="hover:underline mx-2">Disclosures</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('#menu-toggle') && !e.target.closest('#mobile-menu')) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
